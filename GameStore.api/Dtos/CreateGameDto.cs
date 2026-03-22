@@ -1,7 +1,9 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace GameStore.api.Dtos;
 
 public record CreateGameDto(
-    string Name,
+   [Required]string Name,
     string Genre,
     decimal Price,  
     DateOnly ReleaseDate
